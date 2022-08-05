@@ -1,0 +1,76 @@
+.inline-block {
+    display:inline-block;
+    vertical-align: top;
+}
+div.logo{
+    width:23%; 
+    padding: 10px; 
+    padding:1%; 
+}
+nav{
+    width:73%;
+    padding:1%;
+    text-align:right;
+    display:inline-block; 
+    vertical-align: top;
+}
+ul{
+    width:50%;
+    margin-left:auto; 
+}
+.heroimg {
+    margin: 10px; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+.content {
+    width:500px;
+    margin:0 auto;
+}
+footer{
+    background-color: #e6c690;
+    padding:1%;
+}
+#footer {
+    display: inline-block;
+    vertical-align: bottom;
+}
+h1{text-align:center;
+margin:10%;}
+
+.flex-Container{ 
+    display:flex; 
+    margin: 10px 10px 10px 10px; 
+    text-align: center;
+}
+.workGrid { 
+    display: grid; 
+    grid-template-areas: 'project1 project2 project3';
+    margin:3%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    text-align:center;
+}
+.item1 {
+    grid-area: project1; 
+}
+.item2 {
+    grid-area: project2; 
+}
+.item3 {
+    grid-area: project3;
+}
+@media only screen and (max-width: 600px) {
+    .flex-Container { display:flex; 
+        flex-direction:column;
+        width:100%; 
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px;
+        grid-template-areas:
+        "project1"
+        "project2"
+        "project3"
+        ;
+    }
+    }
+}
